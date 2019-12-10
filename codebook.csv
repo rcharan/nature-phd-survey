@@ -1,0 +1,224 @@
+,Question Text,var_type,checkbox_text,notes,num_categories,num_missing
+ID.completed,Case completed in Snap Interviewer,Boolean,,,2,0
+ID.format,The published format which was employed,Categorical,,,3,0
+ID.language,What language would you like to complete the survey in?,Categorical,,,5,0
+ID.site,Questionnaire location,Categorical,,,19,2159
+Q1,"Which, if any, of the following degrees are you currently studying for?",Boolean,,,2,0
+Q12:1,What prompted you to study outside your country of upbringing? ,Check Box,To study at a specific university,Only for students studying outside their home country (Q4),2,0
+Q12:10,What prompted you to study outside your country of upbringing? ,Check Box,Political reasons,Only for students studying outside their home country (Q4),2,0
+Q12:11,What prompted you to study outside your country of upbringing? ,Check Box,"Other, please specify",Only for students studying outside their home country (Q4),2,0
+Q12:2,What prompted you to study outside your country of upbringing? ,Check Box,Lack of quality PhD programmes in my home country,Only for students studying outside their home country (Q4),2,0
+Q12:3,What prompted you to study outside your country of upbringing? ,Check Box,Lack of funding opportunities in my home country,Only for students studying outside their home country (Q4),2,0
+Q12:4,What prompted you to study outside your country of upbringing? ,Check Box,Lack of PhD programmes in my subject of choice,Only for students studying outside their home country (Q4),2,0
+Q12:5,What prompted you to study outside your country of upbringing? ,Check Box,Chance to pursue a specific research question,Only for students studying outside their home country (Q4),2,0
+Q12:6,What prompted you to study outside your country of upbringing? ,Check Box,Higher salaries post-study,Only for students studying outside their home country (Q4),2,0
+Q12:7,What prompted you to study outside your country of upbringing? ,Check Box,More job opportunities post-study,Only for students studying outside their home country (Q4),2,0
+Q12:8,What prompted you to study outside your country of upbringing? ,Check Box,Family reasons,Only for students studying outside their home country (Q4),2,0
+Q12:9,What prompted you to study outside your country of upbringing? ,Check Box,To experience another culture,Only for students studying outside their home country (Q4),2,0
+Q13,Do you have a job alongside your studies?,Boolean,,,2,0
+Q14,What is your main reason for having a job?,Categorical,,Only for students having an extra job (Q13),6,5486
+Q15.a,The difficulty of getting funding / low success rates for grant applications,Ordinal,,What concerns you the most since you started your PhD (ranking),15,3329
+Q15.b,Inability to finish my studies in the time period I had set out to ,Ordinal,,What concerns you the most since you started your PhD (ranking),15,2910
+Q15.c,Impact of a poor relationship with my supervisor/PI,Ordinal,,What concerns you the most since you started your PhD (ranking),15,4069
+Q15.d,The number of available faculty research jobs beyond postdoc,Ordinal,,What concerns you the most since you started your PhD (ranking),15,3100
+Q15.e,The high numbers of PhD holders who are doing or have done multiple postdocs,Ordinal,,What concerns you the most since you started your PhD (ranking),15,3868
+Q15.f,The difficulty of maintaining a work/life balance,Ordinal,,What concerns you the most since you started your PhD (ranking),15,2463
+Q15.g,Uncertainty about the value of a PhD,Ordinal,,What concerns you the most since you started your PhD (ranking),15,3675
+Q15.h,Uncertainty about my job/career prospects,Ordinal,,What concerns you the most since you started your PhD (ranking),15,2333
+Q15.i,Student debt during my PhD,Ordinal,,What concerns you the most since you started your PhD (ranking),15,5140
+Q15.j,"Financial worries after my PhD (cost of living, inability to save for a house, children, retirement)",Ordinal,,What concerns you the most since you started your PhD (ranking),15,2965
+Q15.k,Political landscape ,Ordinal,,What concerns you the most since you started your PhD (ranking),15,4543
+Q15.l,Impostor syndrome,Ordinal,,What concerns you the most since you started your PhD (ranking),15,3798
+Q15.m,Concern about my mental health as a result of PhD study,Ordinal,,What concerns you the most since you started your PhD (ranking),15,3208
+Q15.n,Poor support and acknowledgement of my parenting/elder care responsibilities ,Ordinal,,What concerns you the most since you started your PhD (ranking),15,4825
+Q17,"Overall, what do you enjoy most about life as a PhD student?       ",Categorical,,,10,0
+Q18.a,How satisfied are you with your decision to pursue a PhD?,Ordinal,,,5,0
+Q19.a,How satisfied are you with your PhD experience?,Ordinal,,How satisfied are you with each of the following attributes or aspects of your PhD?,7,0
+Q20,"Since the very start of your graduate school experience, would you say your level of satisfaction has:",Categorical,,,5,0
+Q21.a,Availability of funding,Ordinal,,,8,168
+Q21.b,Hours worked,Ordinal,,,8,47
+Q21.c,Social environment,Ordinal,,,8,31
+Q21.d,Degree of independence,Ordinal,,,8,35
+Q21.e,Recognition from supervisor/PI ,Ordinal,,,8,49
+Q21.f,Overall relationship with supervisor/PI,Ordinal,,,8,56
+Q21.g,Opportunities to collaborate,Ordinal,,,8,95
+Q21.h,Number of publications,Ordinal,,,8,324
+Q21.i,Stipend / financial support,Ordinal,,,8,106
+Q22.a,Vacation time,Ordinal,,,8,128
+Q22.b,"Benefits (health care, leave, etc.)",Ordinal,,,8,276
+Q22.c,Teaching duties,Ordinal,,,8,1156
+Q22.d,Guidance received from adviser in lab/research,Ordinal,,,8,110
+Q22.e,Guidance received from other mentors in lab/research,Ordinal,,,8,247
+Q22.f,Ability to attend meetings and conferences,Ordinal,,,8,102
+Q22.g,Ability to present research at conferences,Ordinal,,,8,236
+Q22.h,Work-life balance,Ordinal,,,8,45
+Q22.i,Career pathway guidance and advice,Ordinal,,,8,152
+Q23,To what extent does your PhD programme compare to your original expectations?,Categorical,,,3,0
+Q24,"On average, how many hours a week do you typically spend on your PhD programme?",Ordinal,,,9,0
+Q25,"On average, how much one-on-one contact time do you spend with your supervisor each week?",Ordinal,,,4,307
+Q27.a,Members of my department make time for frank conversations about my career,Ordinal,,Agreement with statement (from strong disagree to strong agree),6,392
+Q27.b,Members of my department are open to the idea of me pursuing a career outside academia,Ordinal,,Agreement with statement (from strong disagree to strong agree),6,683
+Q27.c,Members of my department have useful advice for careers outside academia,Ordinal,,Agreement with statement (from strong disagree to strong agree),6,593
+Q27.d,Members of my department have contacted potential employers on my behalf,Ordinal,,Agreement with statement (from strong disagree to strong agree),6,1317
+Q27.e,Members of my department have encouraged me to attend career-promoting training and events,Ordinal,,Agreement with statement (from strong disagree to strong agree),6,429
+Q27.f,Members of my department have discouraged me from attending career-promoting training and events,Ordinal,,Agreement with statement (from strong disagree to strong agree),6,568
+Q28,Have you ever sought help for anxiety or depression caused by PhD study?,Categorical,,,4,8
+Q29,Did you seek help for anxiety or depression within your institution? ,Categorical,,Only for students answering yes to seeking help for anxiety/depression (Q28),8,4386
+Q3,Which was the most important reason you decided to enrol in a PhD programme?,Categorical,,,7,0
+Q30.a,Mental health and wellbeing services in my university are tailored and appropriate to the needs of PhD students,Ordinal,,Asked to all; agreement with statement,6,190
+Q30.b,My supervisor/PI has a good awareness of support services and was able to signpost me to them if needed,Ordinal,,Asked to all; agreement with statement,6,239
+Q30.c,My university offers adequate one-to-one mental health support,Ordinal,,Asked to all; agreement with statement,6,195
+Q30.d,"My university offers  different types of support to promote mental health and wellbeing beyond one-to-one support (e.g. workshops, seminars, activities)",Ordinal,,Asked to all; agreement with statement,6,185
+Q30.e,My university supports good work-life balance,Ordinal,,Asked to all; agreement with statement,6,129
+Q30.f,"There is a long-hours culture at my university, including sometimes working through the night",Ordinal,,Asked to all; agreement with statement,6,127
+Q31,Do you feel that you have experienced bullying in your PhD program?,Categorical,,,4,8
+Q32:1,Who was the perpetrator(s)?,Check Box,Supervisor,Only for students answering yes to experiencing bullying (Q31),2,0
+Q32:2,Who was the perpetrator(s)?,Check Box,Another student,Only for students answering yes to experiencing bullying (Q31),2,0
+Q32:3,Who was the perpetrator(s)?,Check Box,Postdoc,Only for students answering yes to experiencing bullying (Q31),2,0
+Q32:4,Who was the perpetrator(s)?,Check Box,Other academic staff member ,Only for students answering yes to experiencing bullying (Q31),2,0
+Q32:5,Who was the perpetrator(s)?,Check Box,Online troll,Only for students answering yes to experiencing bullying (Q31),2,0
+Q32:6,Who was the perpetrator(s)?,Check Box,"Other, please specify",Only for students answering yes to experiencing bullying (Q31),2,0
+Q32:7,Who was the perpetrator(s)?,Check Box,Prefer not to say,Only for students answering yes to experiencing bullying (Q31),2,0
+Q33,Do you feel able to speak out about your experiences of bullying without personal repercussions?,Categorical,,Only for students answering yes to experiencing bullying (Q31),4,5352
+Q34,Do you feel that you have experienced discrimination or harassment in your PhD program?,Categorical,,,4,25
+Q35:1,Which of the following have you experienced? ,Check Box,Racial discrimination or harassment,Only for students answering yes to experiencing discrimination or harassment (Q34),2,0
+Q35:2,Which of the following have you experienced? ,Check Box,Sexual harassment,Only for students answering yes to experiencing discrimination or harassment (Q34),2,0
+Q35:3,Which of the following have you experienced? ,Check Box,Age discrimination,Only for students answering yes to experiencing discrimination or harassment (Q34),2,0
+Q35:4,Which of the following have you experienced? ,Check Box,Gender discrimination,Only for students answering yes to experiencing discrimination or harassment (Q34),2,0
+Q35:5,Which of the following have you experienced? ,Check Box,LGBTQ discrimination or harassment,Only for students answering yes to experiencing discrimination or harassment (Q34),2,0
+Q35:6,Which of the following have you experienced? ,Check Box,Religious discrimination,Only for students answering yes to experiencing discrimination or harassment (Q34),2,0
+Q35:7,Which of the following have you experienced? ,Check Box,Disability discrimination,Only for students answering yes to experiencing discrimination or harassment (Q34),2,0
+Q35:8,Which of the following have you experienced? ,Check Box,"Other, please specify",Only for students answering yes to experiencing discrimination or harassment (Q34),2,0
+Q35:9,Which of the following have you experienced? ,Check Box,Prefer not to say,Only for students answering yes to experiencing discrimination or harassment (Q34),2,0
+Q36.a,,Ordinal,,How much do you expect your PhD to improve your job prospects?,6,341
+Q37.a,Academia,Ordinal,,Which of the following sectors would you most like to work in (beyond a postdoc) when you complete your degree? (Ranking),6,585
+Q37.b,Industry,Ordinal,,Which of the following sectors would you most like to work in (beyond a postdoc) when you complete your degree? (Ranking),6,1055
+Q37.c,Government,Ordinal,,Which of the following sectors would you most like to work in (beyond a postdoc) when you complete your degree? (Ranking),6,1415
+Q37.d,Non-profit,Ordinal,,Which of the following sectors would you most like to work in (beyond a postdoc) when you complete your degree? (Ranking),6,1910
+Q37.e,Medical,Ordinal,,Which of the following sectors would you most like to work in (beyond a postdoc) when you complete your degree? (Ranking),6,2122
+Q38.a,Research in academia ,Ordinal,,Likelihood of pursuing career path,6,82
+Q38.b,Research in industry,Ordinal,,Likelihood of pursuing career path,6,135
+Q38.c,Research within government or non-profit,Ordinal,,Likelihood of pursuing career path,6,196
+Q38.d,Non-research in academia,Ordinal,,Likelihood of pursuing career path,6,223
+Q38.e,Medical research,Ordinal,,Likelihood of pursuing career path,6,185
+Q38.f,Non-research in industry,Ordinal,,Likelihood of pursuing career path,6,262
+Q38.g,Non-research in government or non-profit,Ordinal,,Likelihood of pursuing career path,6,290
+Q39:1,"If you’re unlikely to pursue an academic research career, what are the main reasons? ",Check Box,I am not interested in a research career in academia,Only for students unlikely (1-2 out of 5) to pursue Academic Research (Q38),2,0
+Q39:2,"If you’re unlikely to pursue an academic research career, what are the main reasons? ",Check Box,I don't think I will be able to launch a research career in academia,Only for students unlikely (1-2 out of 5) to pursue Academic Research (Q38),2,0
+Q39:3,"If you’re unlikely to pursue an academic research career, what are the main reasons? ",Check Box,The salary would be too low in academic research,Only for students unlikely (1-2 out of 5) to pursue Academic Research (Q38),2,0
+Q39:4,"If you’re unlikely to pursue an academic research career, what are the main reasons? ",Check Box,The funding climate is discouraging,Only for students unlikely (1-2 out of 5) to pursue Academic Research (Q38),2,0
+Q39:5,"If you’re unlikely to pursue an academic research career, what are the main reasons? ",Check Box,Academic research requires too much administrative work today,Only for students unlikely (1-2 out of 5) to pursue Academic Research (Q38),2,0
+Q39:6,"If you’re unlikely to pursue an academic research career, what are the main reasons? ",Check Box, It is too demanding,Only for students unlikely (1-2 out of 5) to pursue Academic Research (Q38),2,0
+Q39:7,"If you’re unlikely to pursue an academic research career, what are the main reasons? ",Check Box, Lack of work/life balance,Only for students unlikely (1-2 out of 5) to pursue Academic Research (Q38),2,0
+Q39:8,"If you’re unlikely to pursue an academic research career, what are the main reasons? ",Check Box,The political climate where I am currently based is hostile to science,Only for students unlikely (1-2 out of 5) to pursue Academic Research (Q38),2,0
+Q39:9,"If you’re unlikely to pursue an academic research career, what are the main reasons? ",Check Box,"Other, please specify",Only for students unlikely (1-2 out of 5) to pursue Academic Research (Q38),2,0
+Q4,Are you studying in the country you grew up in?   ,Boolean,,,2,0
+Q40,What position do you most expect to occupy immediately after you complete your degree?,Categorical,,Only for students likely (4-5 out of 5) to pursue Research (Q38),16,438
+Q42,"After completing your PhD, how long do you think it will take you to find a permanent (non-trainee) position?",Ordinal,,,6,941
+Q43.a,How much more likely are you now to pursue a research career than when you launched your PhD programme?,Ordinal,,,6,113
+Q44,What is the main reason why you are more likely to pursue a research career? ,Categorical,,Only for students more likely (4-5 out of 5) to pursue Research compared to starting PhD (Q43),8,4024
+Q45:1,How did you arrive at your current career decision?  Plea...,Check Box,Careers training/seminar,,2,0
+Q45:10,How did you arrive at your current career decision?  Plea...,Check Box,Unsure/Not applicable,,2,0
+Q45:11,How did you arrive at your current career decision?  Plea...,Check Box,"Other, please specify",,2,0
+Q45:2,How did you arrive at your current career decision?  Plea...,Check Box,Advice from colleagues,,2,0
+Q45:3,How did you arrive at your current career decision?  Plea...,Check Box, Advice from my supervisor/adviser,,2,0
+Q45:4,How did you arrive at your current career decision?  Plea...,Check Box,Observing my supervisor/PI,,2,0
+Q45:5,How did you arrive at your current career decision?  Plea...,Check Box,Advice from researchers who had secured the job I was interested in,,2,0
+Q45:6,How did you arrive at your current career decision?  Plea...,Check Box,My own internet or other research on the topic,,2,0
+Q45:7,How did you arrive at your current career decision?  Plea...,Check Box,Nature Careers    ,,2,0
+Q45:8,How did you arrive at your current career decision?  Plea...,Check Box,Other science-careers publications,,2,0
+Q45:9,How did you arrive at your current career decision?  Plea...,Check Box,Family influence ,,2,0
+Q46:1,How do you learn about available career opportunities that are beyond academia?,Check Box,I am only interested in academic career opportunities·        ,,2,0
+Q46:10,How do you learn about available career opportunities that are beyond academia?,Check Box,"LinkedIn, Twitter and other social networks",,2,0
+Q46:11,How do you learn about available career opportunities that are beyond academia?,Check Box,Speaking with people in my lab,,2,0
+Q46:12,How do you learn about available career opportunities that are beyond academia?,Check Box,Speaking with people in my department,,2,0
+Q46:13,How do you learn about available career opportunities that are beyond academia?,Check Box,Scientific conferences,,2,0
+Q46:14,How do you learn about available career opportunities that are beyond academia?,Check Box,"Other, please specify",,2,0
+Q46:2,How do you learn about available career opportunities that are beyond academia?,Check Box,My institution provides relevant workshops and resources,,2,0
+Q46:3,How do you learn about available career opportunities that are beyond academia?,Check Box,I cold-contact individuals in jobs that sound interesting,,2,0
+Q46:4,How do you learn about available career opportunities that are beyond academia?,Check Box,My family,,2,0
+Q46:5,How do you learn about available career opportunities that are beyond academia?,Check Box,Professional societies,,2,0
+Q46:6,How do you learn about available career opportunities that are beyond academia?,Check Box,Nature Careers,,2,0
+Q46:7,How do you learn about available career opportunities that are beyond academia?,Check Box,Other science publications/jobs boards,,2,0
+Q46:8,How do you learn about available career opportunities that are beyond academia?,Check Box,Another journal related to my area of speciality,,2,0
+Q46:9,How do you learn about available career opportunities that are beyond academia?,Check Box,Online resources including blogs,,2,0
+Q47:1,Which of the following 3 things would you say are the most difficult for PhD students in your discipline?  ,Check Box,Learning what career possibilities exist,,2,0
+Q47:2,Which of the following 3 things would you say are the most difficult for PhD students in your discipline?  ,Check Box,Finding research careers within academia,,2,0
+Q47:3,Which of the following 3 things would you say are the most difficult for PhD students in your discipline?  ,Check Box,Finding research careers within industry,,2,0
+Q47:4,Which of the following 3 things would you say are the most difficult for PhD students in your discipline?  ,Check Box,Finding research careers within government,,2,0
+Q47:5,Which of the following 3 things would you say are the most difficult for PhD students in your discipline?  ,Check Box,Finding research careers within charity/non-profit,,2,0
+Q47:6,Which of the following 3 things would you say are the most difficult for PhD students in your discipline?  ,Check Box,Obtaining skills for careers in industry,,2,0
+Q47:7,Which of the following 3 things would you say are the most difficult for PhD students in your discipline?  ,Check Box,Obtaining skills for careers in non-profits  ,,2,0
+Q47:8,Which of the following 3 things would you say are the most difficult for PhD students in your discipline?  ,Check Box,Finding non-research careers that use my skills,,2,0
+Q47:9,Which of the following 3 things would you say are the most difficult for PhD students in your discipline?  ,Check Box,"Other, please specify",,2,0
+Q48:1,Which of the following would you say are the most difficult for PhD students in the country where you are studying?,Check Box,Learning what career possibilities exist,,2,0
+Q48:2,Which of the following would you say are the most difficult for PhD students in the country where you are studying?,Check Box, Finding research careers within academia,,2,0
+Q48:3,Which of the following would you say are the most difficult for PhD students in the country where you are studying?,Check Box,Finding research careers within industry,,2,0
+Q48:4,Which of the following would you say are the most difficult for PhD students in the country where you are studying?,Check Box,Finding research careers within government,,2,0
+Q48:5,Which of the following would you say are the most difficult for PhD students in the country where you are studying?,Check Box,Finding research careers with charity/non-profit,,2,0
+Q48:6,Which of the following would you say are the most difficult for PhD students in the country where you are studying?,Check Box,Finding non-research careers that use my skills,,2,0
+Q48:7,Which of the following would you say are the most difficult for PhD students in the country where you are studying?,Check Box,"Other, please specify",,2,0
+Q49:1,Which of the following resources do you think PhD students need the most in order to establish a satisfying career? ,Check Box,Lower competition for grants,,2,0
+Q49:2,Which of the following resources do you think PhD students need the most in order to establish a satisfying career? ,Check Box,Mentorship with individuals in my field/department/institution,,2,0
+Q49:3,Which of the following resources do you think PhD students need the most in order to establish a satisfying career? ,Check Box,Gender-specific mentorship with individuals in my field/department/institution,,2,0
+Q49:4,Which of the following resources do you think PhD students need the most in order to establish a satisfying career? ,Check Box,Better data/information about available career opportunities,,2,0
+Q49:5,Which of the following resources do you think PhD students need the most in order to establish a satisfying career? ,Check Box,"A record of, or data on, career paths of previous graduates from my programme",,2,0
+Q49:6,Which of the following resources do you think PhD students need the most in order to establish a satisfying career? ,Check Box,More jobs in academia,,2,0
+Q49:7,Which of the following resources do you think PhD students need the most in order to establish a satisfying career? ,Check Box,Grants to help PhD holders transition to permanent positions,,2,0
+Q49:8,Which of the following resources do you think PhD students need the most in order to establish a satisfying career? ,Check Box,"Other, please specify",,2,0
+Q50.a,Collecting data,Ordinal,,How well is your programme preparing you to carry out each of the following activities?,6,165
+Q50.b,Analysing data,Ordinal,,How well is your programme preparing you to carry out each of the following activities?,6,95
+Q50.c,Designing robust reproducible experiments,Ordinal,,How well is your programme preparing you to carry out each of the following activities?,6,218
+Q50.d,Writing a paper for publication in a peer-reviewed journal,Ordinal,,How well is your programme preparing you to carry out each of the following activities?,6,160
+Q50.e,Developing  resilience to manage rejection by a peer review panel,Ordinal,,How well is your programme preparing you to carry out each of the following activities?,6,426
+Q50.f,Presenting findings to a specialist audience,Ordinal,,How well is your programme preparing you to carry out each of the following activities?,6,104
+Q50.g,Presenting findings to a non-specialist (public) audience,Ordinal,,How well is your programme preparing you to carry out each of the following activities?,6,208
+Q50.h,Applying for funding,Ordinal,,How well is your programme preparing you to carry out each of the following activities?,6,336
+Q50.i,Finding a satisfying career,Ordinal,,How well is your programme preparing you to carry out each of the following activities?,6,316
+Q50.j,Managing complex projects,Ordinal,,How well is your programme preparing you to carry out each of the following activities?,6,252
+Q50.k,Developing a business plan,Ordinal,,How well is your programme preparing you to carry out each of the following activities?,6,808
+Q50.l,Managing people,Ordinal,,How well is your programme preparing you to carry out each of the following activities?,6,438
+Q50.m,Managing a large operational budget,Ordinal,,How well is your programme preparing you to carry out each of the following activities?,6,803
+Q51.a,I feel that my programme is preparing me well for a research career,Ordinal,,Agreement with statement (from strong disagree to strong agree),6,69
+Q51.b,I feel that my programme is preparing me well for a non-research science-related career ,Ordinal,,Agreement with statement (from strong disagree to strong agree),6,269
+Q51.c,I feel that my programme is preparing me well for a career that straddles both industry and academia,Ordinal,,Agreement with statement (from strong disagree to strong agree),6,271
+Q52:1,"Which, if any, of the following activities have you done to advance your career? ",Check Box,Attended career seminars and/or workshops,,2,0
+Q52:2,"Which, if any, of the following activities have you done to advance your career? ",Check Box,Attended networking events,,2,0
+Q52:3,"Which, if any, of the following activities have you done to advance your career? ",Check Box,Developed my social media profile,,2,0
+Q52:4,"Which, if any, of the following activities have you done to advance your career? ",Check Box,Worked out an individualized development plan,,2,0
+Q52:5,"Which, if any, of the following activities have you done to advance your career? ",Check Box,Discussed my career future with a supervisor/PI,,2,0
+Q52:6,"Which, if any, of the following activities have you done to advance your career? ",Check Box,Discussed my career future with a mentor,,2,0
+Q52:7,"Which, if any, of the following activities have you done to advance your career? ",Check Box,Discussed my career future with a careers counsellor at my institution,,2,0
+Q52:8,"Which, if any, of the following activities have you done to advance your career? ",Check Box,"Other, please specify",,2,0
+Q53:1,Which of the following social media networks have you used to build your professional network? ,Check Box,LinkedIn,,2,0
+Q53:2,Which of the following social media networks have you used to build your professional network? ,Check Box,Twitter,,2,0
+Q53:3,Which of the following social media networks have you used to build your professional network? ,Check Box,Facebook,,2,0
+Q53:4,Which of the following social media networks have you used to build your professional network? ,Check Box,WeChat,,2,0
+Q53:5,Which of the following social media networks have you used to build your professional network? ,Check Box,Blogs/Online threads,,2,0
+Q53:6,Which of the following social media networks have you used to build your professional network? ,Check Box,"Other social media networks, please specify",,2,0
+Q53:7,Which of the following social media networks have you used to build your professional network? ,Check Box,None,,2,0
+Q54:1,What would you do differently right now if you were starting your programme? ,Check Box,Change area of study,,2,0
+Q54:2,What would you do differently right now if you were starting your programme? ,Check Box,Change supervisor/PI ,,2,0
+Q54:3,What would you do differently right now if you were starting your programme? ,Check Box,Not pursue a PhD at all,,2,0
+Q54:4,What would you do differently right now if you were starting your programme? ,Check Box,Nothing,,2,0
+Q54:5,What would you do differently right now if you were starting your programme? ,Check Box,"Other, please specify",,2,0
+Q56,What is your age?,Ordinal,,,7,25
+Q57,Are you…,Categorical,,Gender Identity,4,0
+Q58:1,Which of the following best describes you?,Check Box,Caucasian,,2,0
+Q58:10,Which of the following best describes you?,Check Box,Mixed ethnicity,,2,0
+Q58:11,Which of the following best describes you?,Check Box,"Other, please specify",,2,0
+Q58:12,Which of the following best describes you?,Check Box,Prefer not to say,,2,0
+Q58:2,Which of the following best describes you?,Check Box,Latino/Hispanic,,2,0
+Q58:3,Which of the following best describes you?,Check Box,Middle Eastern,,2,0
+Q58:4,Which of the following best describes you?,Check Box,African,,2,0
+Q58:5,Which of the following best describes you?,Check Box,Caribbean,,2,0
+Q58:6,Which of the following best describes you?,Check Box,South Asian,,2,0
+Q58:7,Which of the following best describes you?,Check Box,East Asian,,2,0
+Q58:8,Which of the following best describes you?,Check Box,Pacific Islander,,2,0
+Q58:9,Which of the following best describes you?,Check Box,American Indian,,2,0
+Q59:1,Do you have any caring responsibilities?,Check Box,"Yes, to child/children under 12",,2,0
+Q59:2,Do you have any caring responsibilities?,Check Box,"Yes, to child/children over 12",,2,0
+Q59:3,Do you have any caring responsibilities?,Check Box,"Yes, to an adult(s)",,2,0
+Q59:4,Do you have any caring responsibilities?,Check Box,No,,2,0
+Q59:5,Do you have any caring responsibilities?,Check Box,"Other, please specify",,2,0
+country,Where do you currently live,Categorical,,,11,0
