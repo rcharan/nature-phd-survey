@@ -320,3 +320,14 @@ class Model:
     def clone(self):
         out = Model(self.y, self.X_cat, self.X_cont, self.interactions)
         return out
+
+
+
+################################################################################
+#
+# Part 6 : Convenience Functions for List Management
+#
+################################################################################
+
+def list_diff(a, b):
+    return list(set(a).difference(b))
