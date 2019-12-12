@@ -334,9 +334,14 @@ class Model:
 def list_diff(a, b):
     return list(set(a).difference(b))
 
+def print_dict(d):
+    key_len = max(map(len, d.keys()))
+    for k, v in d.items():
+        print(f'{k.ljust(key_len)} : {v}')
+
 ################################################################################
 #
-# Part 7 : Persistence conveniences
+# Part 7 : Persistence and timing conveniences
 #
 ################################################################################
 
@@ -367,3 +372,43 @@ def get_fit_time(model_name):
 
 def write_fit_time(model_name, fit_time):
     return _fit_time_interface(model_name, fit_time)
+
+def get_time_per_fold(model_data, param_grid, splitter):
+    fit_time = float(model_data['fit_time'])
+    n_params = functools.reduce(lambda x, y : x * y,
+        (len(v) for v in param_grid.values())
+    )
+    try:
+        n_folds = splitter.get_n_splits() * splitter.n_repeats
+    except AttributeError:
+        n_folds = splitter.get_n_splits()
+
+    return round(fit_time / (n_params * n_folds), 2)
+
+################################################################################
+#
+# Part 8 : ROC Curve
+#
+################################################################################
+
+def plot_roc_curve(fpr, tpr):
+    fig, ax = plt.subplots()
+    ax.plot(fpr, tpr, label = 'ROC')
+    xs = np.linspace(0, 1, len(fpr))
+    ax.plot(xs, xs, label = 'Diagonal')
+    ax.set_xlim([-0.0, 1.0])
+    ax.set_ylim([0.0, 1.0])
+    ax.set_title('ROC Curve')
+    ax.set_xlabel('False Positive Rate (1 - Specificity)')
+    ax.set_ylabel('True Positive Rate (Sensitivity)')
+    ax.grid(True)
+    ax.set_aspect(1)
+    ax.legend()
+    return fig
+
+
+################################################################################
+#
+# Part 9 : Inspection conveniences
+#
+################################################################################
