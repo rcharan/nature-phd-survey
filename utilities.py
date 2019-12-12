@@ -9,6 +9,7 @@ import seaborn as sns
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
+import os
 
 
 ################################################################################
@@ -335,34 +336,34 @@ def list_diff(a, b):
 
 ################################################################################
 #
-# Part 7 : Confusion Matrix
+# Part 7 : Persistence conveniences
 #
 ################################################################################
 
+from joblib import dump, load
+fit_time_fname = './models/fit_times.joblib'
 
-def plot_confusion_matrix(cnf_matrix):
-    # Create the basic matrix
-    plt.imshow(cnf_matrix,  cmap=plt.cm.Blues)
+def _fit_time_interface(model_name, write = None):
+    if os.path.exists(fit_time_fname):
+        fit_time_dict = load(fit_time_fname)
+    else:
+        if not write:
+            print('No fit time info found')
+            return None
+        fit_time_dict = {}
 
-    # Add title and axis labels
-    plt.title('Confusion Matrix')
-    plt.ylabel('True label')
-    plt.xlabel('Predicted label')
+    if write:
+        fit_time_dict[model_name] = write
+        dump(fit_time_dict, fit_time_fname)
+    else:
+        if model_name in fit_time_dict:
+            return fit_time_dict[model_name]
+        else:
+            print(f'No fit time found for {model_name}')
+            return None
 
-    # Add appropriate axis scales
-    class_names = set(y) # Get class labels to add to matrix
-    tick_marks = np.arange(len(class_names))
-    plt.xticks(tick_marks, class_names, rotation=45)
-    plt.yticks(tick_marks, class_names)
+def get_fit_time(model_name):
+    return _fit_time_interface(model_name)
 
-    # Add labels to each cell
-    thresh = cnf_matrix.max() / 2. # Used for text coloring below
-    # Here we iterate through the confusion matrix and append labels to our visualization
-    for i, j in itertools.product(range(cnf_matrix.shape[0]), range(cnf_matrix.shape[1])):
-            plt.text(j, i, cnf_matrix[i, j],
-                     horizontalalignment='center',
-                     color='white' if cnf_matrix[i, j] > thresh else 'black')
-
-    # Add a legend
-    plt.colorbar()
-    plt.show()
+def write_fit_time(model_name, fit_time):
+    return _fit_time_interface(model_name, fit_time)
