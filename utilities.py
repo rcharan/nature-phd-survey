@@ -373,15 +373,18 @@ def get_fit_time(model_name):
 def write_fit_time(model_name, fit_time):
     return _fit_time_interface(model_name, fit_time)
 
-def get_time_per_fold(model_data, param_grid, splitter):
+def get_time_per_fold(model_data, param_grid, splitter = None):
     fit_time = float(model_data['fit_time'])
     n_params = functools.reduce(lambda x, y : x * y,
         (len(v) for v in param_grid.values())
     )
-    try:
-        n_folds = splitter.get_n_splits() * splitter.n_repeats
-    except AttributeError:
-        n_folds = splitter.get_n_splits()
+    if splitter:
+        try:
+            n_folds = splitter.get_n_splits() * splitter.n_repeats
+        except AttributeError:
+            n_folds = splitter.get_n_splits()
+    else:
+        n_folds = 1
 
     return round(fit_time / (n_params * n_folds), 2)
 
