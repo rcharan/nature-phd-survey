@@ -61,7 +61,7 @@ be in order to remedy this. I chose Logistic Regression as the winning model bec
 - It minimizes the cross-entropy loss, my secondary preferred metric
 - It is highly interpretable
 
-![Models](./figures/roc_curve.png)
+![Models](./figures/roc_curve.pdf)
 
 ## Units
 Please note that the cross-entropy loss and the logistic regression coefficients are reported
