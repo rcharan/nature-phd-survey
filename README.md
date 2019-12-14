@@ -78,8 +78,10 @@ vary from 0.21, and Cost Complexity Pruning is now available. For more, see the 
 Since I am writing this on December 14th, you may need to upgrade. At your own risk,
 you can run `conda install scikit-learn=0.22` alternatively you can use
 the environment file in this repository by running
-```conda env create -f nature-phd-survey.yml
-conda activate nature-phd-survey```
+```
+conda env create -f nature-phd-survey.yml
+conda activate nature-phd-survey
+```
 The environment contains the minimal software necessary for this project.
 
 ### Organization
