@@ -69,6 +69,20 @@ for an event going up by a factor of 10. (3 decibels corresponds to a factor of 
 You can read more about this in this Medium post. [Link to come - 12/13/19]
 
 ## How to use this repository
+### Software
+**Warning**: The analysis notebook *requires* scikit-learn 0.22, released
+December 3, 2019. For example plot_roc_curve and plot_confusion_matrix are new, AdaBoost predictions may
+vary from 0.21, and Cost Complexity Pruning is now available. For more, see the full
+[changelog](https://scikit-learn.org/dev/whats_new/v0.22.html#version-0-22-0)
+
+Since I am writing this on December 14th, you may need to upgrade. At your own risk,
+you can run `conda install scikit-learn=0.22` alternatively you can use
+the environment file in this repository by running
+```conda env create -f nature-phd-survey.yml
+conda activate nature-phd-survey```
+The environment contains the minimal software necessary for this project.
+
+### Organization
 The main analysis is performed in analysis.ipynb. Two settings to be noted:
 1. go_for_broke: set this to True to utilize parallel processing in Grid Search
 and Random Forests. This will use all CPUs available. (Default: True)
