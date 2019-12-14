@@ -56,8 +56,9 @@ Details of training times, scores, and optimal parameters are available in the a
 notebook and the presentation. There is also model inspection (e.g. feature importance) in the notebook.
 
 Ultimately, most of the models (the simple Decision Tree aside) performed similarly, as evaluated by AUC.
-Some attempts to fix class imbalance issues were unsuccessful and a deeper hyper-parameter search could
-be in order to remedy this. I chose Logistic Regression as the winning model because
+Some attempts to fix class imbalance issues were modestly succesful but did not change the AUC, and a deeper
+hyper-parameter search could be in order to remedy this if desired. I chose Logistic Regression as
+the winning model because
 - It minimizes the cross-entropy loss, my secondary preferred metric
 - It is highly interpretable
 
