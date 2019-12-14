@@ -79,8 +79,8 @@ You can read more about this in this Medium post. [Link to come - 12/13/19]
 ## How to use this repository
 ### Software
 **Warning**: The analysis notebook *requires* scikit-learn 0.22, released
-December 3, 2019. For example plot_roc_curve and plot_confusion_matrix are new, AdaBoost predictions may
-vary from 0.21, and Cost Complexity Pruning is now available. For more, see the full
+December 3, 2019. For example `plot_roc_curve` and `plot_confusion_matrix` are new, AdaBoost predictions may
+vary from 0.21 (!), and Cost Complexity Pruning is now available. For more, see the full
 [changelog](https://scikit-learn.org/dev/whats_new/v0.22.html#version-0-22-0).
 
 Since I am writing this on December 14th, you may need to upgrade. At your own risk,
@@ -113,3 +113,5 @@ mostly aesthetic, processing of some of the tables and figures
 is necessary to reproduce the presentation.
 
 The utilities.py file contains a handful of conveniences.
+
+The nature-phd-survey.yml file contains environment information for reproducability.

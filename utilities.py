@@ -1,15 +1,9 @@
 import datetime
 import matplotlib.pyplot as plt
-import pandas as pd
-from math import ceil, sqrt
 import functools
 import numpy as np
-import collections
-import seaborn as sns
-from statsmodels.stats.outliers_influence import variance_inflation_factor
-import statsmodels.api as sm
-import statsmodels.formula.api as smf
 import os
+from joblib import dump, load
 
 
 ################################################################################
@@ -108,7 +102,6 @@ class Timer:
 #
 ################################################################################
 
-from joblib import dump, load
 fit_time_fname = './models/fit_times.joblib'
 
 def _fit_time_interface(model_name, write = None):
