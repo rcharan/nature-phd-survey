@@ -3,15 +3,21 @@
 Using Nature's 2019 [survey](https://www.nature.com/articles/d41586-019-03459-7)
 of PhD students worldwide, I attempt to classify career intent ("likely to
 remain in academia or not") based on answers to other survey questions.
-([Original Data](https://figshare.com/s/74a5ea79d76ad66a8af8))
+([original data](https://figshare.com/s/74a5ea79d76ad66a8af8))
 
 I fit several models (Logistic Regression, a simple Decision Tree,  Random Forest,
   AdaBoost, and Gradient Boost) using scikit-learn and selected Logistic Regression
   as the best model based on comparable AUC and preference for interpretability.
-  I achieve a total AUC of 82% with 80% accuracy.
+  I achieve an AUC of 82% with 80% accuracy.
 
 For the Logistic Regression, we examine the coefficients and find some surprising
-associations. You can view the presentation [in the repository](https://github.com/rcharan/nature-phd-survey/blob/master/Escaping%20the%20Ivory%20Tower.pdf) or on [Google Slides](https://docs.google.com/presentation/d/1mHOpzvGjcN_gwGcptkcT-M1Vo7QSzI1jlDBYw6G05c8/edit?usp=sharing)
+associations. For example, students who feel more strongly that they are concerned
+about their mental health due to their studies are *more* likely to continue in
+academia.
+
+You can view the presentation [in the repository](https://github.com/rcharan/nature-phd-survey/blob/master/Escaping%20the%20Ivory%20Tower.pdf) or on [Google Slides](https://docs.google.com/presentation/d/1mHOpzvGjcN_gwGcptkcT-M1Vo7QSzI1jlDBYw6G05c8/edit?usp=sharing)
+
+![Feature Importances](./figures/logistic-features.png)
 
 This is my Module 5 project for the Flatiron School Data Science Immersive program
 in New York City.
@@ -22,7 +28,7 @@ numerous subparts. Questions spanned a wide variety of topics; more details are 
 
 I end up with 111 predictors. They are binary/categorical (62 before one-hot encoding)
 and ordinal (49), with no continuous predictors. The ordinal variables were treated as
-continuous for the purposes of the logistic regression.
+continuous for the purposes of modeling.
 
 There is an overall class imbalance such that the Dummy Classifier achieves 71% accuracy by
 predicting that all students will remain in academia.
@@ -55,6 +61,8 @@ be in order to remedy this. I chose Logistic Regression as the winning model bec
 - It minimizes the cross-entropy loss, my secondary preferred metric
 - It is highly interpretable
 
+![Models](./figures/roc_curve.png)
+
 ## Units
 Please note that the cross-entropy loss and the logistic regression coefficients are reported
 in units of decibels. 1 decibel is approximately 4.3 nats. Software packages including scikit-learn
@@ -73,10 +81,10 @@ You can read more about this in this Medium post. [Link to come - 12/13/19]
 **Warning**: The analysis notebook *requires* scikit-learn 0.22, released
 December 3, 2019. For example plot_roc_curve and plot_confusion_matrix are new, AdaBoost predictions may
 vary from 0.21, and Cost Complexity Pruning is now available. For more, see the full
-[changelog](https://scikit-learn.org/dev/whats_new/v0.22.html#version-0-22-0)
+[changelog](https://scikit-learn.org/dev/whats_new/v0.22.html#version-0-22-0).
 
 Since I am writing this on December 14th, you may need to upgrade. At your own risk,
-you can run `conda install scikit-learn=0.22` alternatively you can use
+you can run `conda install scikit-learn=0.22`. Alternatively you can use
 the environment file in this repository by running
 ```
 conda env create -f nature-phd-survey.yml
@@ -85,13 +93,13 @@ conda activate nature-phd-survey
 The environment contains the minimal software necessary for this project.
 
 ### Organization
-The main analysis is performed in analysis.ipynb. Two settings to be noted:
-1. go_for_broke: set this to True to utilize parallel processing in Grid Search
+The main analysis is performed in **analysis.ipynb**. Two settings to be noted:
+1. `go_for_broke`: set this to True to utilize parallel processing in Grid Search
 and Random Forests. This will use all CPUs available. (Default: True)
-2. load_from_disk: set this to True to load the fitted models from models directory.
+2. `load_from_disk`: set this to True to load the fitted models from models directory.
 This is recommended (default True). If for some reason you want to refit the models
 yourself, the fitting times with the current Grid Search parameters are reported.
-Total time is a little of 3 hours on a 2.7 GHz Intel Core i5 (Dual Core). Expect this time to
+Total time is a little over 3 hours on a 2.7 GHz Intel Core i5 (Dual Core). Expect this time to
 double if you set go_for_broke = False. Expect it to halve if you have 4 comparable CPUs and
 allow parallel processing and so on.
 
@@ -101,7 +109,7 @@ codebook.csv.
 
 The presentation is included as a pdf. Also, several of the tables and figures used
 in their raw forms, in the tables folder and figures folder respectively. Additional,
-mostly aesthetic processing of some of the tables and figures
-is necessary to reproduce the presentation
+mostly aesthetic, processing of some of the tables and figures
+is necessary to reproduce the presentation.
 
 The utilities.py file contains a handful of conveniences.
