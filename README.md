@@ -75,7 +75,7 @@ multiplying by 10. Equivalently: taking logs in base 10**(1/10).
 Decibels are a unit of information that is easy to interpret. An increase in 10 decibels corresponds to the odds
 for an event going up by a factor of 10. (3 decibels corresponds to a factor of 2).
 
-You can read more about this in this Medium post. [Link to come - 12/13/19]
+You can read more about this in this [Medium post](https://towardsdatascience.com/understanding-logistic-regression-coefficients-7a719ebebd35)
 
 ## How to use this repository
 ### Software
